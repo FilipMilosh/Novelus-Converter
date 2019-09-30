@@ -1,0 +1,25 @@
+form {
+	padding-top: 8%;
+	text-align: center;
+	background-color: rgba(248, 231, 245, 0.64);
+	padding-bottom: 2%;
+	color: rgba(123, 4, 109, 0.68);
+}
+
+.containerNav {
+	background-color:rgba(184, 130, 232, 0.66);
+	height: 5rem;
+	width: 100%;
+}
+
+.logoim {
+	margin-left: 5%;
+}
+
+body {
+	background-image: url("bg.jpg");
+	width: 100%;
+}
+h1{
+	color: rgba(123, 4, 109, 0.68);
+}

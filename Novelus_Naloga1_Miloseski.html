@@ -1,0 +1,94 @@
+<!doctype html>
+	<head>
+		<link rel="stylesheet" href="novelus.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Naloga1</title>
+	</head>
+	<body>
+	<div class="containerNav">
+	  <div class="row">
+		<div class="col" id="logo">
+		<a href="https://novelus.eu/sl/" ><img src="logo.png" alt="logo" class="logoim" height="50rem" /></a>
+		</div>
+		<div class="col-6" id="navtitle">
+		</div>
+		<div class="col"> 
+		</div>
+	</div>
+	
+	</div>
+	
+		<form>
+			<h1>Convert Px to Rem</h1>
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm">
+				</div>
+				<div class="col-sm">
+				  Vnesite število pikslov: &nbsp <span id="outputPx"> <input type="number" class="response" id="px" /> </span>
+				</div>
+				<div class="col-sm">
+				</div>
+			  </div>
+			</div>
+			</br>
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm">
+				</div>
+				<div class="col-sm">
+				  Vnesite število REM-ov: <span id="outputRem"> <input type="number" class="response" id="rem"/> </span>
+				</div>
+				<div class="col-sm">
+				</div>
+			  </div>
+			</div>
+			</br>
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm">
+				</div>
+				<div class="col-sm">
+				 Privzeta velikost pixla &nbsp &nbsp  <input type="number" value="16" class="response" id="odnos"/>
+				</div>
+				<div class="col-sm">
+				</div>
+			  </div>
+			</div>
+			<br/>
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm">
+				</div>
+				<div class="col-sm">
+				<input type="button" onClick="Calculate()" Value="Convert" />
+				</div>
+				<div class="col-sm">
+				</div>
+			  </div>
+			</div>
+			
+		</form>
+		<script>
+				
+			function Calculate(){
+				var x = document.getElementById("px").value;
+				var y = document.getElementById("rem").value;
+				var c = document.getElementById("odnos").value;
+				var rezpx= 0;
+				rezpx= y*c;
+				var rezrem= 0;
+				rezrem= x/c;
+				if  (x.length == 0 ) {
+					document.getElementById("outputPx").innerHTML = rezpx;
+					}
+				else if (y.length == 0) {
+					document.getElementById("outputRem").innerHTML = rezrem;
+					}
+				else {
+					alert("Vnesite vrednost za px ali rem!");
+					}
+			}
+		</script>
+	</body>
+</html>

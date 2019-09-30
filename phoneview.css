@@ -1,0 +1,15 @@
+body {
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	width: 480px;
+	height: auto; 
+	}
+
+
+* {
+	max-width: 480px;
+}
+.response {
+	clear: both;
+}
